@@ -4,6 +4,8 @@ import Header from "../../Components/Header/Header";
 import Navbar from "../../Components/Navbar/Navbar";
 import PropertyList from "../../Components/PropertyList/PropertyList";
 import FeaturedProperties from "../../Components/FeaturedProperties/FeaturedProperties";
+import MailList from "../../Components/MailList/MailList";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
         <PropertyList />
         <h1 className="homeTitle">Homes guests love</h1>
         <FeaturedProperties />
+        <MailList />
+        <Footer />
       </div>
     </div>
   );
