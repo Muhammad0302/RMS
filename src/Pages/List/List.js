@@ -23,7 +23,7 @@ const List = () => {
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
               <label>Destination</label>
-              <input placeholder={destination} type="text" />
+              <input readonly="true" placeholder={destination} type="text" />
             </div>
             <div className="lsItem">
               <label>Check-in Date</label>
@@ -50,13 +50,13 @@ const List = () => {
               <div className="lsOptions">
                 <div className="lsOptionItem">
                   <span className="lsOptionText">
-                    Min price <small>per night</small>
+                    Min price <small>(per night)</small>
                   </span>
                   <input type="number" className="lsOptionInput" />
                 </div>
                 <div className="lsOptionItem">
                   <span className="lsOptionText">
-                    Max price <small>per night</small>
+                    Max price <small>(per night)</small>
                   </span>
                   <input type="number" className="lsOptionInput" />
                 </div>
@@ -92,6 +92,7 @@ const List = () => {
             <button>Search</button>
           </div>
           <div className="listResult">
+            <SearchItem />
             <SearchItem />
             <SearchItem />
             <SearchItem />
